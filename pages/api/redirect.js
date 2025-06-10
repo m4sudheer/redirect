@@ -11,8 +11,12 @@ export default function handler(req, res) {
 
         // Optional: whitelist domain
         const allowedDomains = [
-            'cigna-im--devghb.sandbox.my.site.com',
-            'your-trusted-domain.com'
+           'cigna-im--devghb.sandbox.my.site.com',
+            'cigna-im--cimsit.sandbox.my.site.com',
+            'cigna-im--cimuat.sandbox.my.site.com',
+        'cigna-im--cimdm.sandbox.my.site.com',
+        'customer.cignaenvoy.com',
+            'cigna-im.my.site.com'
         ];
 
         if (!allowedDomains.includes(parsedURL.hostname)) {
